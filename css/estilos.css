@@ -1,0 +1,216 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('file:///C:/Users/Vagabundo/Desktop/Css/img/fund.png');
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  background-color: rgb(167, 193, 248);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.menu a:hover{
+  background-color: teal;
+  color: white;
+}
+
+a{
+  color: teal;
+  text-decoration: none;
+}
+
+.titulo{
+  transform: scale(0.2) translateY(30vh);
+  opacity: 0;
+  animation: linear 2s animatitulo forwards;
+}
+
+@keyframes animatitulo{
+  100%{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-title {
+  font-family: 'Cormorant SC', serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle {
+  color: silver;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2em;
+}
+
+.videos {
+  margin-top: 0px;
+  padding: 2em;
+  min-width: 100vh;
+}
+
+.videos
+.grid{
+  font-size: 20px;
+  display: grid;
+  gap: 2em;
+  margin-left: 15px;
+  
+}
+@media (min-width: 600px){
+  .videos .grid{
+    grid-template-columns:180px 180px;
+  }
+}
+
+@media (min-width: 880px){
+  .videos .grid {
+    align-items: center;
+    grid-template-columns:repeat(2, 420px);
+    justify-content: center;
+  }
+}
+
+@media(min-width: 600px){
+  .img-portfolio { 
+  height: 70;
+  width: 160;
+  }
+}
+
+@media(min-width: 880px){
+  .img-portfolio { 
+    height: 140px;
+    width: 270px;
+  }
+
+}
+
+.sobre .avatar img{
+  float: right;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-right: 38px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+}
+
+.avatar img{
+  max-width: 200px; 
+  max-height: 300px;
+  height: 100;
+  width: 150;
+  
+}
+
+
+.img-portfolio {
+  border-radius: 15px; 
+  height: 160px;
+  width: 290px;
+  object-fit: cover;
+  object-position: left bottom;
+  transition: 0.4s;
+}
+
+.img-portfolio:hover{
+  transform: scale(1.12);
+}
+
+.sobre {
+  color: rgb(53, 35, 35);
+  font-style: italic;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.sobre a{
+  color: black;
+  font-family: fantasy;
+  transition: text-shadow 0.2s;
+}
+
+.sobre a:hover{
+  text-shadow: 0px 0px 10px rgb(78, 46, 46) ;
+}
+
+.sobre p{
+  text-indent: 2em;
+  margin-bottom: 1.4em;
+ 
+}
+
+.contato{
+  padding: 2em;
+  min-width: 100vh;
+  text-align: center;
+}
+
+.contato a{
+  text-decoration: none;
+  font-size: 80px;
+  color: black;
+  transition: text-shadow 0.2s;
+}
+
+.contato a:hover{
+  text-shadow: 0px 0px 10px rgb(78, 46, 46);  
+}
